@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\parser">
+      <UniqueIdentifier>{2ef25f0e-0eff-477d-b624-82a3414fbd00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rendererelements">
+      <UniqueIdentifier>{60a4ee24-4c9b-4d7e-a042-60f67767a0fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rendererelements\Integrator">
+      <UniqueIdentifier>{d79fa7d5-6b2a-4b99-a99c-d3a46093aebc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rendererelements\Sampler">
+      <UniqueIdentifier>{ec36f28e-fcbc-49a0-9246-0ba41620d764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sceneelements">
+      <UniqueIdentifier>{afbce879-85ec-49e0-a5db-5ff3df53f542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sceneelements\geometry">
+      <UniqueIdentifier>{6eb5f2ba-61aa-4ce4-847f-d159a0744a8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils">
+      <UniqueIdentifier>{d584cc31-1203-45c6-9902-b5057e3dc313}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils\textures">
+      <UniqueIdentifier>{d185b9a8-95a2-4f6a-b104-1437ba469c21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\exporter">
+      <UniqueIdentifier>{da2b3876-2a2e-48b4-9e0c-330f10ce34bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\trianglemeshreader">
+      <UniqueIdentifier>{fe28db34-2c69-4f11-a266-d253211a7da8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\RayTracer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\parser\ConfigParser.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\parser\SceneParser.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\parser\SimpleXMLNode.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rendererelements\IntersectionData.cpp">
+      <Filter>Source Files\rendererelements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rendererelements\Integrator\DirectLighting.cpp">
+      <Filter>Source Files\rendererelements\Integrator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rendererelements\Integrator\Integrator.cpp">
+      <Filter>Source Files\rendererelements\Integrator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rendererelements\Integrator\PathTracer.cpp">
+      <Filter>Source Files\rendererelements\Integrator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rendererelements\Integrator\WhittedIntegrator.cpp">
+      <Filter>Source Files\rendererelements\Integrator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rendererelements\Sampler\Sample.cpp">
+      <Filter>Source Files\rendererelements\Sampler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rendererelements\Sampler\SuperSampler.cpp">
+      <Filter>Source Files\rendererelements\Sampler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sceneelements\IElement.cpp">
+      <Filter>Source Files\sceneelements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sceneelements\PointLight.cpp">
+      <Filter>Source Files\sceneelements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sceneelements\SimpleCamera.cpp">
+      <Filter>Source Files\sceneelements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sceneelements\geometry\Mesh.cpp">
+      <Filter>Source Files\sceneelements\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sceneelements\geometry\MeshTriangle.cpp">
+      <Filter>Source Files\sceneelements\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sceneelements\geometry\MeshVertex.cpp">
+      <Filter>Source Files\sceneelements\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\utils\Image.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\utils\Ray.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\utils\textures\ImageTexture.cpp">
+      <Filter>Source Files\utils\textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\exporter\Exporter.cpp">
+      <Filter>Source Files\exporter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\trianglemeshreader\OBJFileReader.cpp">
+      <Filter>Source Files\trianglemeshreader</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\Renderer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Scene.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\parser\ConfigParser.h">
+      <Filter>Source Files\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\parser\SceneParser.h">
+      <Filter>Source Files\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\parser\SimpleXMLNode.h">
+      <Filter>Source Files\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rendererelements\IntersectionData.h">
+      <Filter>Source Files\rendererelements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rendererelements\Integrator\DirectLighting.h">
+      <Filter>Source Files\rendererelements\Integrator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rendererelements\Integrator\Integrator.h">
+      <Filter>Source Files\rendererelements\Integrator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rendererelements\Integrator\PathTracer.h">
+      <Filter>Source Files\rendererelements\Integrator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rendererelements\Integrator\WhittedIntegrator.h">
+      <Filter>Source Files\rendererelements\Integrator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rendererelements\Sampler\ISampler.h">
+      <Filter>Source Files\rendererelements\Sampler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rendererelements\Sampler\Sample.h">
+      <Filter>Source Files\rendererelements\Sampler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rendererelements\Sampler\SuperSampler.h">
+      <Filter>Source Files\rendererelements\Sampler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sceneelements\ICamera.h">
+      <Filter>Source Files\sceneelements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sceneelements\IElement.h">
+      <Filter>Source Files\sceneelements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sceneelements\ILight.h">
+      <Filter>Source Files\sceneelements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sceneelements\PointLight.h">
+      <Filter>Source Files\sceneelements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sceneelements\SimpleCamera.h">
+      <Filter>Source Files\sceneelements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sceneelements\geometry\Mesh.h">
+      <Filter>Source Files\sceneelements\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sceneelements\geometry\MeshTriangle.h">
+      <Filter>Source Files\sceneelements\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sceneelements\geometry\MeshVertex.h">
+      <Filter>Source Files\sceneelements\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utils\AABB.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utils\ComplexNumber.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utils\IFunctionObservable.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utils\Image.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utils\KDTreeNode.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utils\Material.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utils\Matrix4.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utils\MonteCarloUtilities.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utils\Point.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utils\Ray.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utils\rpoly.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utils\string_conversions.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utils\Vector2.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utils\Vector3.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utils\Vector4.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utils\textures\ImageTexture.h">
+      <Filter>Source Files\utils\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utils\textures\ITexture.h">
+      <Filter>Source Files\utils\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\exporter\Exporter.h">
+      <Filter>Source Files\exporter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\trianglemeshreader\OBJFileReader.h">
+      <Filter>Source Files\trianglemeshreader</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

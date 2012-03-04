@@ -1,0 +1,281 @@
+<html>
+<head>
+<base target="_self">
+</head>
+
+<bodys style="font-family: Arial, Helvetica, sans-serif;">
+
+<br>
+
+
+<table class="main" width="800" align="center" cellspacing="0" cellpadding="0">
+
+	<!-- TOP BAR ----------------------------------------------------------------------------------------->
+	<tr>
+
+		<td align="center">
+            <TABLE WIDTH=800 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+                <TR>
+                    <TD COLSPAN=4>
+    					<h2>SceneDescription Tutorial</h2>
+                </TR>
+            </TABLE>
+		</td>
+
+	</tr>
+
+
+
+
+
+	<tr>
+		<td>
+			<!-- text -->
+			<table border="0" width="100%" align="left" cellspacing="0" cellpadding="0" frame="void">
+				<tr height="10px">
+					&nbsp;
+				</tr>
+				<tr>
+					<td width = "700px" align="left" valign="top">
+
+						<br><br>
+						This tutorial will show you how you can define a Scene for the RayTracer.<br> <br>
+						<h3>1. Begin</h3>
+						The scene is described using the XML language. To begin the scene tag has to be opened.<br>
+						<br>
+					</td>
+				</tr>
+			</table><br>
+
+			<!-- code -->
+			<table border="0" width="100%" align="left" cellspacing="0" cellpadding="0" frame="void">
+				<tr height="10px">
+					&nbsp;
+				</tr>
+				<tr>
+					<td width="60px">
+						&nbsp;
+					</td>
+					<td>
+						<h5>
+							&lt;Scene background="0.0 0.0 0.0 1.0" ambient=".02 .02 .02 1.0" refractionIndex="1.0"&gt;<br>
+							<br><br>
+							&lt;/Scene&gt;  <br>
+							</h5>
+					</td>
+					<td width="60px">
+						&nbsp;
+					</td>
+				</tr>
+			</table><br>
+
+			<!-- text -->
+			<table border="0" width="100%" align="left" cellspacing="0" cellpadding="0" frame="void">
+				<tr height="10px">
+					&nbsp;
+				</tr>
+				<tr>
+					<td width = "700px" align="left" valign="top">
+						The attribute <strong>background</strong> defines the background color of the scene. <strong>ambient</strong> defines
+						the scene's ambient parameter used for phong lighting. The refraction index of the scenes medium (i.e "air") is set by
+						<strong>refractionIndex</strong>. The refraction value is a real number unequal zero. The colors are clamped
+						to [0,1].
+						<br><br><br><br>
+						 <h3>2. Camera</h3>
+						 <br>The first thing to be defined in the scene is the camera.<br>
+					</td>
+				</tr>
+			</table><br>
+
+			<!-- code -->
+			<table border="0" width="100%" align="left" cellspacing="0" cellpadding="0" frame="void">
+				<tr height="10px">
+					&nbsp;
+				</tr>
+				<tr>
+					<td width="60px">
+						&nbsp;
+					</td>
+					<td>
+						<h6>
+							&lt;Scene ...&gt;<br><br>
+						</h6>
+						<h5>
+							&lt;Camera position="0.0 0.0 0.0" direction="0.0 0.0 -1.0" up="0.0 1.0 0.0" angle="16" resolutionX="300" resolutionY="300"/&gt;<br><br><br>
+						</h5>
+						<h6>
+
+							&lt;/Scene&gt;  <br>
+						</h6>
+					</td>
+					<td width="60px">
+						&nbsp;
+					</td>
+				</tr>
+			</table><br>
+
+
+			<!-- text -->
+			<table border="0" width="100%" align="left" cellspacing="0" cellpadding="0" frame="void">
+				<tr height="10px">
+					&nbsp;
+				</tr>
+				<tr>
+					<td width = "700px" align="left" valign="top">
+						<strong>position</strong>, <strong>direction</strong> and <strong>up</strong> define the orientation of the camera in space.
+						The <strong>angle</strong> attribute defines the opening angle of the camera in degrees. The two values <strong>resolutionX</strong>
+						and <strong>resolutionY</strong> are the image resolutions used by the camera film. <strong>resolutionX</strong>
+						and <strong>resolutionY</strong> of type integers must be defined, the other attributes are optional.
+						<br><br><br><br>
+						<h3>3. Material and Texture definition</h3>
+						Now materials and textures can be defined. Each of them are loaded with their names in order to assign to elements later.
+					</td>
+				</tr>
+			</table><br>
+
+			<!-- code -->
+			<table border="0" width="100%" align="left" cellspacing="0" cellpadding="0" frame="void">
+				<tr height="10px">
+					&nbsp;
+				</tr>
+				<tr>
+					<td width="60px">
+						&nbsp;
+					</td>
+					<td>
+						<h6>
+							&lt;Scene ...&gt;<br>
+							&lt;Camera .../&gt;<br><br>
+						</h6>
+						<h5>
+							&lt;Materials&gt;<br>
+							&nbsp;&lt;color_red emission="0.0 0.0 0.0 1.0" ambient="1.0 0.0 0.0 1.0" diffuse="1.0 0.0 0.0 1.0" specular="0.2 0.0 0.0 1.0" shinyness="10.0"/&gt;<br>
+							&nbsp;...<br>
+							&lt;Materials/&gt;<br><br>
+
+							&lt;Textures&gt;<br>
+							&nbsp;&lt;texture_one file="filename.tga"/&gt;<br>
+							&nbsp;...<br>
+							&lt;Textures/&gt;<br><br>
+						</h5>
+						<h6>
+							&lt;/Scene&gt;  <br>
+						</h6>
+					</td>
+					<td width="60px">
+						&nbsp;
+					</td>
+				</tr>
+			</table><br>
+
+			<!-- text -->
+			<table border="0" width="100%" align="left" cellspacing="0" cellpadding="0" frame="void">
+				<tr height="10px">
+					&nbsp;
+				</tr>
+				<tr>
+					<td width = "700px" align="left" valign="top">
+						<strong>color_red</strong> and <strong>texture_one</strong> are the names of the material and texture respectively.
+						The values  <strong>emission, ambient, diffuse, specular</strong> and <strong>shinyness</strong> are the parameters
+						of the material. All of them have to be defined. Otherwise the material will not be loaded.
+						As for the texture, the <strong>file</strong> attribute is the name of the texture to be loaded and its position is relative to the scene description file. It also must be defined.
+						The image file format is a 24-bit targa (.tga).
+						<br><br><br><br>
+						<h3>4. Elements</h3>
+						The final step is to create the geometry. These should be defined after the materials and textures as they can have references to
+						to them. All elements of the scene can be defined inside the <strong>&lt;Elements&gt;</strong> Tag
+					</td>
+				</tr>
+			</table><br>
+
+			<!-- code -->
+			<table border="0" width="100%" align="left" cellspacing="0" cellpadding="0" frame="void">
+				<tr height="10px">
+					&nbsp;
+				</tr>
+				<tr>
+					<td width="60px">
+						&nbsp;
+					</td>
+					<td>
+						<h6>
+							&lt;Scene ...&gt;<br><br>
+							...<br><br>
+							&lt;Textures/&gt;<br><br>
+						</h6>
+						<h5>
+							&lt;Elements&gt;<br><br>
+							&lt;Element_name ... &gt;<br>
+							&nbsp;&lt;Material ref="color_red"/&gt;<br>
+							&nbsp;&lt;Texture ref="texture_one"/&gt;<br>
+							&lt;Element_name/&gt;<br><br>
+							... <br><br>
+							&lt;Elements&gt;<br><br>
+
+
+						</h5>
+						<h6>
+							&lt;/Scene&gt;  <br>
+						</h6>
+					</td>
+					<td width="60px">
+						&nbsp;
+					</td>
+					<!-- text -->
+			<table border="0" width="100%" align="left" cellspacing="0" cellpadding="0" frame="void">
+				<tr height="10px">
+					&nbsp;
+				</tr>
+				<tr>
+					<td width = "700px" align="left" valign="top">
+						The example above shows how to reference textures and materials. <strong>color_red</strong> and <strong>texture_one</strong> are
+						the names you defined before. If there is no material or texture inside the elements tags, or the name is not found the default material will be choosen and no texture will be used.
+						The table below shows you which types of elements are currently implemented. <br>
+						Note that <strong>refractionPercentage + reflectionPercentage</strong> have to be smaller or equal than one. 
+						Use <strong>translateFromOrigin</strong>, <strong>scale</strong> and <strong>rotate</strong> to place an obj geometry. If none of the is specified, the object is not transformed at all. Else, it is first scaled to have a bounding box diagonal of 1, then scaled by <strong>scale</strong>, then rotate by <strong>rotate</strong> and finally translated from the origion.
+						<br><br>
+						<table border="1">
+							<tr>
+								<td>
+									Mesh
+								</td>
+								<td>
+									OBJFileName="name.obj" <br>
+								</td>
+								<td>
+									The .obj file should have normals and the polygons shoud be triangles. Meshlab has proven to export obj's that are usually loadable.
+								</td>
+								<td>
+									translateFromOrigin="0.0 0.0 0.0"
+									scale="1 1 1"
+									rotate="0 0 0"
+									reflectionPercentage="0.0"<br>
+									refractionPercentage="0.0"<br>
+									refractionIndex="1.0"<br>
+								</td>
+							</tr>
+						<table/>
+					</td>
+				</tr>
+			</table><br>
+				</tr>
+			</table><br>
+		</td>
+	</tr>
+
+
+
+
+
+
+	<tr>
+		<td height="60">
+		        &nbsp;
+		        <br>
+		</td>
+	</tr>
+</table>
+
+
+</body>
+</html>

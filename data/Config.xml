@@ -1,0 +1,18 @@
+<Renderer >
+  <Sampler type="SuperSampler" mSubsamples="1" jitter="no"/>
+  
+  <!--
+ 	<Integrator type="PathTracer" maxDepth="100" sampleDepth="3" pContinue="0.5">
+	</Integrator>
+	-->
+	
+	<Integrator type="DirectLighting" nSamples="50">
+	</Integrator>
+	
+		
+	<!-- <Integrator type="WhittedIntegrator" recursionDepth="3">
+		<Shader type="PhongLightingShader"/>
+	</Integrator> -->
+	
+	
+</Renderer>
